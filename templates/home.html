@@ -98,12 +98,12 @@
             </div>
             <div class="mb-3">
                 <label class="form-label">Reading Score out of 100</label>
-                <input class="form-control" type="number" name="writing_score" placeholder="Enter your Reading Score"
+                <input class="form-control" type="number" name="reading_score" placeholder="Enter your Reading Score"
                     min='0' max='100' />
             </div>
             <div class="mb-3">
                 <label class="form-label">Writing Score out of 100</label>
-                <input class="form-control" type="number" name="reading_score" placeholder="Enter your Reading score"
+                <input class="form-control" type="number" name="writing_score" placeholder="Enter your Reading score"
                     min='0' max='100' />
             </div>
             <div class="mb-3">
@@ -119,11 +119,11 @@
         <div class="input-features-card">
             <h3>Input Features</h3>
             <ul>
-                <li><b>Gender : </b> {{ gender }}</li>
-                <li><b>Ethnicity : </b> {{ ethnicity }}</li>
-                <li><b>Parental Level of Education : </b> {{ parental_level_of_education }}</li>
-                <li><b>Lunch : </b> {{ lunch }}</li>
-                <li><b>Test Preparation Course : </b> {{ test_preparation_course }}</li>
+                <li><b>Gender : </b> {{ gender | title }}</li>
+                <li><b>Ethnicity : </b> {{ ethnicity | title }}</li>
+                <li><b>Parental Level of Education : </b> {{ parental_level_of_education | title }}</li>
+                <li><b>Lunch : </b> {{ lunch | title }}</li>
+                <li><b>Test Preparation Course : </b> {{ test_preparation_course | title }}</li>
                 <li><b>Reading Score : </b> {{ reading_score }}</li>
                 <li><b>Writing Score : </b> {{ writing_score }}</li>
             </ul>
