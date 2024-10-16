@@ -1,7 +1,7 @@
 import os
 import sys
-from src.exception import CustomException
-from src.logger import logging
+from ..exception import CustomException
+from ..logger import logging
 import pandas as pd 
 
 from sklearn.model_selection import train_test_split
@@ -26,7 +26,7 @@ class DataIngestion:
         logging.info("entered the data ingestion method or component")
         try:
             # reading data from the source --> it can be MongoDB or SQL or or APIs or anything else
-            df = pd.read_csv('notebook\data\student.csv')
+            df = pd.read_csv('notebook/data/student.csv')
             logging.info('read the dataset as dataframe')
             
             # making the components of artifacts folder
@@ -59,4 +59,4 @@ if __name__ == '__main__':
     train_arr,test_arr,_ = data_transformation.initiate_data_transformation(train_data,test_data)
     
     model_trainer = ModelTrainer()
-    print(f"R-square score of the model is: {model_trainer.initiate_model_trainer(train_arr,test_arr)}")
+    print(f"R-square score of the model is: {model_trainer.initiate_model_trainer(train_arr,test_arr)*100}")
