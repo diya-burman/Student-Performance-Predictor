@@ -20,6 +20,7 @@ body {
     border-radius: 12px;
     box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.15);
     transition: all 0.3s ease;
+    padding-top: 15px;
 }
 
 .login:hover {
@@ -30,7 +31,7 @@ h1 {
     text-align: center;
     font-family: 'Montserrat', sans-serif;
     color: #34495e;
-    font-size: 32px;
+    font-size: 30px;
     font-weight: 600;
     margin-bottom: 25px;
 }
@@ -99,7 +100,7 @@ h2 {
     background-color: #f4f4f9; /* Light background for the box */
     border: 2px solid #007bff; /* Border color matching the button */
     border-radius: 10px;       /* Rounded corners */
-    width: 80%;
+    width: 40%;                /* Reduced width (change this as needed) */
     margin: 20px auto;         /* Center the box horizontally */
     text-align: center;        /* Center the text */
     box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.1); /* Subtle shadow */
@@ -112,6 +113,83 @@ h2 {
     font-weight: 600;
 }
 
+/* Styling for the container card */
+.input-features-card {
+    max-width: 450px;            /* Maximum width for the container */
+    margin: 20px auto;           /* Centering the container */
+    padding: 25px;               /* Padding inside the container */
+    background-color: #ffffff;   /* White background for a clean look */
+    border-radius: 15px;         /* Soft rounded corners */
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15); /* Subtle box shadow for depth */
+    transition: all 0.3s ease;   /* Smooth transition for hover effect */
+    border: 1px solid #f0f0f0;   /* Light border */
+    padding-top: 8px;
+}
+
+/* Hover effect for the card */
+.input-features-card:hover {
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25); /* Enhanced shadow on hover */
+    transform: translateY(-5px);  /* Slight lift on hover */
+}
+
+/* Styling for the unordered list */
+ul {
+    list-style-type: none;  /* Removes bullet points */
+    padding: 0;
+    margin: 0;
+}
+
+/* Styling for list items */
+li {
+    font-size: 16px;        /* Text size for list items */
+    font-weight: 400;       /* Normal text weight */
+    color: #333333;         /* Dark text color */
+    margin-bottom: 12px;    /* Space between list items */
+}
+
+/* Bolded text for the label part in the list */
+li strong {
+    color: #2c3e50;        /* Darker blue shade for labels */
+    font-weight: 700;      /* Make the label bold */
+}
+
+/* Styling for the heading */
+h3 {
+    font-size: 20px;       /* Larger heading size */
+    color: #2980b9;        /* A bold blue color for the heading */
+    margin-bottom: 15px;   /* Space between heading and content */
+    font-weight: 700;      /* Bolder heading */
+    text-align: center;    /* Centered heading text */
+}
+
+/* Styling for the paragraph when no results */
+p {
+    font-size: 15px;
+    color: #7f8c8d;       /* Grey color for no result text */
+    text-align: center;    /* Center the message */
+    margin-top: 15px;
+}
+
+/* Responsive design for smaller devices */
+@media (max-width: 600px) {
+    .input-features-card {
+        padding: 20px;      /* Reduce padding */
+        margin: 15px auto;  /* Reduce margin */
+    }
+
+    h3 {
+        font-size: 18px;    /* Slightly smaller heading */
+    }
+    
+    li {
+        font-size: 14px;    /* Adjust font size */
+        margin-bottom: 10px; /* Adjust spacing */
+    }
+
+    p {
+        font-size: 13px;    /* Smaller paragraph size */
+    }
+}
 
 
 @media (max-width: 768px) {
