@@ -31,7 +31,7 @@ To set up the project locally, follow these steps:
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/vtandon1204/The-Performance-Predictor.git
+   git clone https://github.com/diya-burman/The-Performance-Predictor.git
    cd The-Performance-Predictor
 2. **Install the required dependencies:**
    ```bash
